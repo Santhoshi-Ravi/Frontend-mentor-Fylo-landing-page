@@ -1,0 +1,296 @@
+body{
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans';
+  margin: 0;
+  Font size: 14px;
+}
+h1, h2, h3{
+  font-family: 'Raleway';
+}
+/* Navigation Bar */
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: hsl(217, 28%, 15%);
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: hsl(198, 60%, 50%);
+}
+
+/* Introduction */
+.Intro{
+  background-color: hsl(217, 28%, 15%);
+}
+.Intro_image{
+  width:40%;
+  position: relative;
+  z-index: 1;
+}
+
+.text{
+  padding: 5% 15%;
+  position:relative;
+  z-index: 1;
+}
+.Button{
+  background-color: hsl(198, 60%, 50%);
+  border-radius: 15px;
+  width: 15rem;
+  color: white;
+  font-family: 'Open Sans';
+  border: hsl(198, 60%, 50%);
+  padding: 0.5% 2%;
+  position: relative;
+  z-index: 1;
+}
+.curvy_image{
+  position: relative;
+  z-index: 0;
+  bottom:330px;
+  width: 100%;
+}
+
+/* Features */
+.Features{
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+}
+.unique-feature{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  justify-content: space-between;
+  text-align:center;
+}
+
+/* Working */
+.Working{
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.productive{
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.how_it_works_link{
+  text-decoration: underline;
+  color: hsl(176, 68%, 64%);
+}
+
+/* Testimonials */
+
+.testimonials{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.profile{
+  float: left;
+  border-radius: 100%;
+  padding-right: 5%;
+}
+.person{
+  background-color: hsl(217, 28%, 15%);
+  text-align: left;
+  padding: 1.5%;
+  height: 10%;
+  margin: 2%;
+  flex-basis: 700px;
+  flex-shrink: 2;
+  box-shadow: 10px 5px 5px black;
+}
+.quotes{
+  bottom:100px;
+}
+
+/* Early sign up */
+.access{
+  background-color: hsl(217, 28%, 15%);
+  width: 50%;
+  margin: 5% 20%;
+  padding: 3% 5%;
+  box-shadow: 10px 5px 5px black;
+  position: absolute;
+  z-index: 1;
+
+}
+.sign-up .Button{
+  width:30%;
+  background-color: hsl(176, 68%, 64%);
+}
+.email{
+  border-radius: 15px;
+  width: 15rem;
+  padding: 0.5% 2%;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(217, 28%, 15%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  padding-top: 200px;
+  top: 150px;
+  position: relative;
+}
+.footer-logo{
+  align: left;
+  margin-left: 15%;
+}
+
+.footer-location-icon{
+  float: left;
+}
+.footer-brand{
+  flex-shrink: 20000;
+  text-align: left;
+}
+.footer-contact, .footer-link{
+  margin: 5%;
+}
+.footer-icon{
+  margin: 2%;
+}
+.icon{
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 0.5em;
+  /* margin: 0.5em; */
+}
+/*-----------------------------------------------Mobile version-----------------------------------------------*/
+@media (max-width: 1200px) {
+  body{
+    font-size: x-large;
+  }
+  .curvy_image{
+    bottom:300px;
+  }
+  .Button{
+    width: 70%;
+    font-size: x-large;
+  }
+  .Features {
+    flex-direction: column;
+    align-items:center;
+  }
+  .unique-feature{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7%;
+}
+.feature-icon{
+  width:20%;
+}
+.Working{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50%;
+}
+.productive{
+  padding-left: 5%;
+  padding-right: 3%;
+  padding-top: 10%;
+}
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile{
+  float: left;
+  border-radius: 100%;
+  padding-right: 5%;
+
+}
+.person{
+  background-color: hsl(217, 28%, 15%);
+  text-align: left;
+  width:40rem;
+  padding: 3%;
+  height: 10%;
+  font-size: xx-large;
+  margin: 5%;
+}
+.access{
+  width: 60%;
+  margin: 5% 15%;
+  padding: 3% 7%;
+  box-shadow: 10px 5px 5px black;
+  font-size: xx-large;
+}
+.sign-up .Button{
+  width :100%;
+  background-color: hsl(176, 68%, 64%);
+  /* height: 10rem; */
+  font-size: xx-large;
+  margin: 3%;
+}
+.email{
+  border-radius: 15px;
+  width: 100%;
+  padding: 0.5% 2%;
+  font-size: xx-large;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(217, 28%, 15%);
+  justify-content:  space-between;
+  align-items:  flex-start;
+  padding: 5%;
+  padding-top: 200px;
+  top: 500px;
+  position: relative;
+  font-size: x-large;
+}
+.footer .footer-icons{
+  margin: 0;
+  align-self: center;
+
+}
+.icon{
+    font-size: 2em;
+    border: solid;
+    border-radius: 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.footer-location-icon{
+  float: none;
+  height: 4em;
+  padding: 2em;
+
+}
+.footer-brand{
+  flex-shrink: 0;
+  text-align: left;
+  margin: 0;
+  /* margin-left: 2%; */
+}
+.footer-contact, .footer-link{
+  margin: 5%;
+  text-align: left;
+}
+.footer .text{
+  padding: 2%;
+}
+}
